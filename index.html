@@ -5,6 +5,26 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="./menu.css">
 <link rel="stylesheet" href="./split.css">
+<link rel="stylesheet" href="./mobnav.css">
+
+<style>
+
+ .icon1{
+      display: none;
+  }
+ 
+  @media screen and (max-width: 600px) {
+  .icon1 {
+    display: block;
+  }
+  .xop-left{
+    display: none;
+
+  }
+}
+
+
+  </style>
 </head>
 <body>
 
@@ -20,8 +40,32 @@
       
       <div style="padding-left:16px;">
         <h2>Responsive Topnav Example</h2>
-      
-      
+        <div id="main">
+          <button class="openbtn icon1" id="de"   onclick="openNav()"><i class="fa fa-bars"></i> Content</button>  
+          </div>
+
+
+
+
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)"  class="closebtn" onclick="closeNav()">×</a>
+          <a href="#"></a><br>
+          <a href="./xml/index.html">Learn XML Complete Tutorial</a>
+
+        </div>
+        
+        
+        
+         
+
+
+
+
+
+
+
+
+
 
       <section class="xop-container">
         <div class="xop-left">
@@ -51,5 +95,13 @@
 </div>
 <script type="text/javascript" src="./menu.js">
 </script>
+<script type="text/javascript" src="./mobnav.js">
+</script>
+
+
+
+
+
+
 </body>
 </html> 
