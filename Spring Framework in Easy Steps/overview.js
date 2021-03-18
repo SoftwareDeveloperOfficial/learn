@@ -1,9 +1,9 @@
 function myFunction1() {
-  location.replace("lec/1)intro.html")
+  location.replace("lec/1)advantages.html")
 }
 
 function myFunction2() {
-  location.replace("lec/2)webserviceoverview.html")
+  location.replace("lec/2)disadvanatages.html")
 }
 
 function myFunction3() {
