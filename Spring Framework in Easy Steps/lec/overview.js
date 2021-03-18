@@ -7,7 +7,7 @@ function myFunction2() {
 }
 
 function myFunction3() {
-  location.replace("../quiz/quiz1.html")
+  location.replace("3)Common Pitfalls.html")
 }
 
 function myFunction4() {
