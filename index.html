@@ -5,14 +5,37 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="./menu.css">
 <link rel="stylesheet" href="./split.css">
+<link rel="stylesheet" href="./mobnav.css">
+
+<style>
+
+ .icon1{
+      display: none;
+  }
+ 
+  @media screen and (max-width: 600px) {
+  .icon1 {
+    display: block;
+  }
+  .xop-left{
+    display: none;
+
+  }
+}
+
+
+  </style>
 </head>
 <body>
 
     <div class="topnav" id="myTopnav">
-        <a href="#home" class="active">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+      <a href="#home" class="active">Home</a>
+      <a href="./weservices/webservices.html">Web Services</a>
+      <a href="xml/xml.html">Xml</a>
+      <a href="soap/soap.html">Soap Webservice</a>
+      <a href="rest/rest.html">Rest Webservice</a>
+      <a href="./Spring Framework in Easy Steps/spring.html">Spring Framework in Easy Steps</a>
+
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
@@ -20,14 +43,40 @@
       
       <div style="padding-left:16px;">
         <h2>Responsive Topnav Example</h2>
-      
-      
+        <div id="main">
+          <button class="openbtn icon1" id="de"   onclick="openNav()"><i class="fa fa-bars"></i> Content</button>  
+          </div>
+
+
+
+
+        <div id="mySidebar" class="sidebar">
+          <a href="javascript:void(0)"  class="closebtn" onclick="closeNav()"> <span style="color: wheat;">×</span></a>
+          <a href="#"></a><br>
+          <a href="./xml/index.html" style="color: blanchedalmond;">Learn XML Complete Tutorial</a>
+
+        </div>
+        
+        
+        
+         
+
+
+
+
+
+
+
+
+
 
       <section class="xop-container">
         <div class="xop-left">
             <article>
                 <h1>The Left</h1>
-                <a href="./xml/index.html">Learn XML Complete Tutorial</a>
+                <a href="./weservices/webservices.html">Learn Web Services Complete Tutorial</a>
+<br><br>
+                <a href="./xml/xml.html">Learn XML Complete Tutorial</a>
             </article>
         </div>
 
@@ -51,5 +100,13 @@
 </div>
 <script type="text/javascript" src="./menu.js">
 </script>
+<script type="text/javascript" src="./mobnav.js">
+</script>
+
+
+
+
+
+
 </body>
 </html> 

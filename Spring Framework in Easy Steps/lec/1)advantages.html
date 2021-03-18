@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../../menu.css">
+<link rel="stylesheet" href="../../split.css">
+<link rel="stylesheet" href="../../mobnav.css">
+<link rel="stylesheet" href="../popup/pop.css">
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<style>
+
+  .icon1{
+       display: none;
+   }
+  
+   @media screen and (max-width: 600px) {
+   .icon1 {
+     display: block;
+   }
+   .xop-left{
+     display: none;
+ 
+   }
+ }
+ 
+ 
+   </style>
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+      <a href="#home" >Home</a>
+      <a href="../../weservices/webservices.html">Web Services</a>
+      <a href="../../xml/xml.html">Xml</a>
+      <a href="../../soap/soap.html">Soap Webservice</a>
+      <a href="../../rest/rest.html">Rest Webservice</a>
+      <a href="../spring.html" class="active">Spring Framework in Easy Steps</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      
+      <div style="padding-left:16px;">
+        <h2 style="color: chocolate;">Spring Framework in Easy Steps</h2>
+        <h3>Advantages</h3>
+
+        <div id="main">
+          <button class="openbtn icon1" id="de"   onclick="openNav()"><i class="fa fa-bars"></i> Content</button>  
+          </div>
+
+
+
+
+        <div id="mySidebar" class="sidebar" style="background-color:grey;" >
+          <a href="javascript:void(0)"  class="closebtn" onclick="closeNav()">×</a><br>
+          <article>
+<p> </p> <br>
+           <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">1. Introduction to Spring</button>
+            <div class="content">
+            <ol>
+            <br>
+              <li style="cursor: grab;" onclick="myFunction1()">Advantages</li>
+              <hr>
+              <br>
+              <li style="cursor: grab;" onclick="myFunction2()">Disadvantages</li>
+              <hr>
+              <br>
+              <li style="cursor: grab;" onclick="myFunction3()">Common Pitfalls</li>
+              <hr>
+              <br>
+              <li style="cursor: grab;" onclick="myFunction4()">SOA and Web Services</li>
+              <hr>
+              <br>
+              <li style="cursor: grab;" onclick="myFunction5()">Quiz-2 : Web Services and SOA</li>
+              <hr>
+              <br>
+              <li style="cursor: grab;" onclick="myFunction6()">Summary</li>
+              <hr>
+              <br>
+            </ol> 
+            </div>
+            
+            
+
+        </article>
+        </div>
+      
+
+      <section class="xop-container">
+        <div class="xop-left">
+            <article>
+                <h1>The Content</h1>
+                <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">1. Introduction to Spring</button>
+                <div class="content">
+                <ol>
+                <br>
+                  <li style="cursor: grab;" onclick="myFunction1()">Advantages</li>
+                  <hr>
+                  <br>
+                  <li style="cursor: grab;" onclick="myFunction2()">Disadvantages</li>
+                  <hr>
+                  <br>
+                  <li style="cursor: grab;" onclick="myFunction3()">Common Pitfalls</li>
+                  <hr>
+                  <br>
+                  <li style="cursor: grab;" onclick="myFunction4()">SOA and Web Services</li>
+                  <hr>
+                  <br>
+                  <li style="cursor: grab;" onclick="myFunction5()">Quiz-2 : Web Services and SOA</li>
+                  <hr>
+                  <br>
+                  <li style="cursor: grab;" onclick="myFunction6()">Summary</li>
+                  <hr>
+                  <br>
+                </ol> 
+                </div>
+                
+    
+
+            </article>
+        </div>
+
+        
+        <div class="xop-mid">
+          <div class="popup" onclick="myFunctionpop()" style="float: right;margin-right: 55px;">About Author!
+  <span class="popuptext" id="myPopup"><div style="background-color: black; color:white;padding: 10px;"><br>
+    Hello! And thanks for investing your valuable time here in the "Spring Framework in easy steps" course.<br><br>
+
+This is Software Developer. I'm a Java Developer and instructor.<br><br>
+
+I have been designing and developing enterprise Java applications for the last 9 years.<br><br>
+</div></span>
+</div>
+            <article>
+                <p id="demo"><br><br>
+                  <div style="color: white; background-color: orange; padding: 10px;"> Advantages of Spring Framework </div>
+                   <br><br>
+There are many advantages of Spring Framework. They are as follows: <br><br>
+
+ <span style="color: white; background-color: black; padding: 10px;">1) Predefined Templates</span><br><br>
+Spring framework provides templates for JDBC, Hibernate, JPA etc. technologies. So there is no need to write too much code. It hides the basic steps of these technologies.
+<br><br>
+Let's take the example of JdbcTemplate, you don't need to write the code for exception handling, creating connection, creating statement, committing transaction, closing connection etc. You need to write the code of executing query only. Thus, it save a lot of JDBC code.
+<br><br>
+<span style="color: white; background-color: black; padding: 10px;">2) Loose Coupling</span><br><br>
+The Spring applications are loosely coupled because of dependency injection.
+<br><br>
+<span style="color: white; background-color: black; padding: 10px;">3) Easy to test</span><br><br>
+The Dependency Injection makes easier to test the application. The EJB or Struts application require server to run the application but Spring framework doesn't require server.
+<br><br>
+<span style="color: white; background-color: black; padding: 10px;">4) Lightweight</span><br><br>
+Spring framework is lightweight because of its POJO implementation. The Spring Framework doesn't force the programmer to inherit any class or implement any interface. That is why it is said non-invasive.
+<br><br>
+<span style="color: white; background-color: black; padding: 10px;">5) Fast Development</span><br><br>
+The Dependency Injection feature of Spring Framework and it support to various frameworks makes the easy development of JavaEE application.
+<br><br>
+<span style="color: white; background-color: black; padding: 10px;">6) Powerful abstraction</span><br><br>
+It provides powerful abstraction to JavaEE specifications such as JMS, JDBC, JPA and JTA.
+<br><br>
+<span style="color: white; background-color: black; padding: 10px;">7) Declarative support</span><br><br>
+It provides declarative support for caching, validation, transactions and formatting.
+<br><br>
+
+
+
+
+
+
+
+<span style="color: white; background-color: blue; padding: 10px;">The benefits of Spring Framework include:</span><br><br><br><br>
+<span style="color: white; background-color: brown; padding: 10px;">* Plain Old Java Object </span>—<br><br> Developers call this POJO. The reason this is so beneficial is that it means developers do not have to use a server or any other enterprise container. This makes the entire framework extremely lightweight, which is a significant advantage when developing web applications.
+<br><br><br><br>
+<span style="color: white; background-color: brown; padding: 10px;">* Flexible Configurations </span> —<br><br> Developers have the option to choose either XML or Java-based annotations for configuration purposes. Having such an option makes the jobs of developers a lot simpler.
+<br><br><br><br>
+<span style="color: white; background-color: brown; padding: 10px;">* The AOP Module </span>—<br><br> Developers can have different compilation units or a separate class loader.
+<br><br><br><br>
+<span style="color: white; background-color: brown; padding: 10px;">* Testing is Easier </span>—<br><br> The Spring Dependency injection helps developers insert test data.
+<br><br><br><br>
+While there are advantages of Spring framework, there are some disadvantages as well, and they are listed below.
+<br><br><br><br>    </p>
+            </article>
+        </div>
+        <div class="xop-right">
+            <article>
+             <!--   <h1>Overview</h1>
+                <p id="demo">
+                    XML (eXtensible Markup Language) is a markup language used for storing and transporting data. This XML tutorial consists the detailed explanation of all the XML related topics in a systematic manner. Read and practice the tutorials in the given order and you will not face any difficulty in learning XML even if you are a complete beginner. This XML tutorial is designed for both beginners and advanced XML professionals.
+                </p> -->
+            </article> </div>
+
+            
+        </section>
+    </div>
+    <script type="text/javascript" src="../../menu.js">
+    </script>
+    <script src="overview.js">
+    </script>
+    <script type="text/javascript" src="../../mobnav.js">
+    </script>
+    
+    
+    
+    <script src="../popup/pop.js"></script>
+    
+    
+    </body>
+    
+    </html> 

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../../menu.css">
+<link rel="stylesheet" href="../../split.css">
+<link rel="stylesheet" href="../../mobnav.css">
+<link rel="stylesheet" href="../popup/pop.css">
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<style>
+
+  .icon1{
+       display: none;
+   }
+  
+   @media screen and (max-width: 600px) {
+   .icon1 {
+     display: block;
+   }
+   .xop-left{
+     display: none;
+ 
+   }
+ }
+ 
+ 
+   </style>
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+      <a href="#home" >Home</a>
+      <a href="../../weservices/webservices.html">Web Services</a>
+      <a href="../../xml/xml.html">Xml</a>
+      <a href="../../soap/soap.html">Soap Webservice</a>
+      <a href="../../rest/rest.html">Rest Webservice</a>
+      <a href="../spring.html" class="active">Spring Framework in Easy Steps</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      
+      <div style="padding-left:16px;">
+        <h2 style="color: chocolate;">Spring Framework in Easy Steps</h2>
+        <h3>Common Pitfalls</h3>
+
+        <div id="main">
+          <button class="openbtn icon1" id="de"   onclick="openNav()"><i class="fa fa-bars"></i> Content</button>  
+          </div>
+
+
+
+
+        <div id="mySidebar" class="sidebar" style="background-color:grey;" >
+          <a href="javascript:void(0)"  class="closebtn" onclick="closeNav()">×</a><br>
+          <article>
+<p> </p> <br>
+           <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">1. Introduction to Spring</button>
+            <div class="content">
+            <ol>
+            <br>
+              <li style="cursor: grab;" onclick="myFunction1()">Advantages</li>
+              <hr>
+              <br>
+              <li style="cursor: grab;" onclick="myFunction2()">Disadvantages</li>
+              <hr>
+              <br>
+              <li style="cursor: grab;" onclick="myFunction3()">Common Pitfalls</li>
+              <hr>
+              <br>
+              <li style="cursor: grab;" onclick="myFunction4()">SOA and Web Services</li>
+              <hr>
+              <br>
+              <li style="cursor: grab;" onclick="myFunction5()">Quiz-2 : Web Services and SOA</li>
+              <hr>
+              <br>
+              <li style="cursor: grab;" onclick="myFunction6()">Summary</li>
+              <hr>
+              <br>
+            </ol> 
+            </div>
+            
+            
+
+        </article>
+        </div>
+      
+
+      <section class="xop-container">
+        <div class="xop-left">
+            <article>
+                <h1>The Content</h1>
+                <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">1. Introduction to Spring</button>
+                <div class="content">
+                <ol>
+                <br>
+                  <li style="cursor: grab;" onclick="myFunction1()">Advantages</li>
+                  <hr>
+                  <br>
+                  <li style="cursor: grab;" onclick="myFunction2()">Disadvantages</li>
+                  <hr>
+                  <br>
+                  <li style="cursor: grab;" onclick="myFunction3()">Common Pitfalls</li>
+                  <hr>
+                  <br>
+                  <li style="cursor: grab;" onclick="myFunction4()">SOA and Web Services</li>
+                  <hr>
+                  <br>
+                  <li style="cursor: grab;" onclick="myFunction5()">Quiz-2 : Web Services and SOA</li>
+                  <hr>
+                  <br>
+                  <li style="cursor: grab;" onclick="myFunction6()">Summary</li>
+                  <hr>
+                  <br>
+                </ol> 
+                </div>
+                
+    
+
+            </article>
+        </div>
+
+        
+        <div class="xop-mid">
+          <div class="popup" onclick="myFunctionpop()" style="float: right;margin-right: 55px;">About Author!
+  <span class="popuptext" id="myPopup"><div style="background-color: black; color:white;padding: 10px;"><br>
+    Hello! And thanks for investing your valuable time here in the "Spring Framework in easy steps" course.<br><br>
+
+This is Software Developer. I'm a Java Developer and instructor.<br><br>
+
+I have been designing and developing enterprise Java applications for the last 9 years.<br><br>
+</div></span>
+</div>
+            <article>
+                <p id="demo"><br><br>
+                  <div style="color: white; background-color: blue; padding: 10px;"> Common Pitfalls </div>
+                   <br><br>
+                   
+                   When you are designing the architecture of the web app, it is critical that you avoid the following mistakes.<br><br>
+                 <span style="background-color: green; color: white;padding: 10px;"> Error Handling is Not a Priority</span> —<br><br> The mistakes that usually happen here are that the developers are not notified of the errors as soon as they occur, or the error message is not specific enough. It is а good practice to let the users know what the error is, without revealing all the details involved.
+                   <br><br>      <span style="background-color: green; color: white;padding: 10px;"> Reports are Created from Tables that Contain the App’s Data</span> —<br><br> We all try to get reports out as soon as possible. However, the data container may be incomplete or missing entirely. It is hard to pack all of the various types of data because the code will be too complex. Therefore, it would be a much better decision to create a separate reporting database that will have all the information you will need.
+                   <br><br>      <span style="background-color: green; color: white;padding: 10px;"> Trying to Reinvent Things</span> —<br><br> The app development process is very complicated. Therefore, you should try to keep specific processes as simple as possible. This includes not trying to reinvent the wheel. Thus, instead of having your developers writing code that is easier to maintain, consider using libraries and other frameworks that already exist to help you reach this goal.
+                   <br><br>     <span style="background-color: green; color: white;padding: 10px;"> Querying Entities in a Read-Only Transaction</span> —<br><br> This has a very negative effect on the performance of an application. A lot of people do this simply because it is easy to do so, but it is an awful practice that you should stop doing right away.
+                   <br><br>     
+                   <br><br>   <span style="background-color:orangered; color: white;padding: 10px;"> Your Success Will Depend on Experience</span>
+                   <br><br>     <div style="background-color:whitesmoke; padding: 10px;">While Spring offers a lot of benefits, you will need very experienced developers who will know how to take advantage of them. When you have a lot of options to choose from, it is easy to make a wrong judgment or fall into a common pitfall like the ones mentioned above. Therefore, when developing your product with the Spring framework, make sure you have a team of experienced developers available.
+                  </div><br><br><br><br>    </p>
+            </article>
+        </div>
+        <div class="xop-right">
+            <article>
+             <!--   <h1>Overview</h1>
+                <p id="demo">
+                    XML (eXtensible Markup Language) is a markup language used for storing and transporting data. This XML tutorial consists the detailed explanation of all the XML related topics in a systematic manner. Read and practice the tutorials in the given order and you will not face any difficulty in learning XML even if you are a complete beginner. This XML tutorial is designed for both beginners and advanced XML professionals.
+                </p> -->
+            </article> </div>
+
+            
+        </section>
+    </div>
+    <script type="text/javascript" src="../../menu.js">
+    </script>
+    <script src="overview.js">
+    </script>
+    <script type="text/javascript" src="../../mobnav.js">
+    </script>
+    
+    
+    
+    <script src="../popup/pop.js"></script>
+    
+    
+    
+    </body>
+    
+    </html> 
