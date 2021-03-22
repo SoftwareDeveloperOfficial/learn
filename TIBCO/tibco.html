@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../menu.css">
+<link rel="stylesheet" href="../split.css">
+<link rel="stylesheet" href="../mobnav.css">
+<link rel="stylesheet" href="./popup/pop.css">
+
+<link href="./xml_js/intro.html" rel="import" />
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<style>
+
+  .icon1{
+       display: none;
+   }
+  
+   @media screen and (max-width: 600px) {
+   .icon1 {
+     display: block;
+   }
+   .xop-left{
+     display: none;
+ 
+   }
+ }
+ 
+ 
+   </style>
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+      <a href="#home" >Home</a>
+      <a href="#" class="active">Tibco</a>
+      <a href="../weservices/webservices.html">Web Services</a>
+      <a href="../xml/xml.html">Xml</a>
+      <a href="../soap/soap.html">Soap Webservice</a>
+      <a href="../rest/rest.html">Rest Webservice</a>
+      <a href="../Spring Framework in Easy Steps/spring.html" >Spring Framework in Easy Steps</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      
+      <div style="padding-left:16px;">
+        <h2 style="color: chocolate;">Integrated Process Management Practice - TIBCO Capabilities</h2>
+        <div id="main">
+          <button class="openbtn icon1" id="de"   onclick="openNav()"><i class="fa fa-bars"></i> Content</button>  
+          </div>
+
+
+
+
+        <div id="mySidebar" class="sidebar" style="background-color:grey;" >
+          <a href="javascript:void(0)"  class="closebtn" onclick="closeNav()">×</a><br>
+          <article>
+<p> </p> <br>
+           <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-1</button>
+            <div class="content">
+            <ol>
+            <br>
+              <li style="cursor: grab;" onclick="myFunction1()">Introduction to EAI,SOA,ESB, Integration Pattern</li>
+              <hr>
+              <br>
+              <li style="cursor: grab;" onclick="myFunction2()">Overview of TIBCO Business works 5,Installations, Schemas (XSD,DTD)</li>
+              <hr>
+              <br>
+            </ol> 
+            </div>
+            <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-2</button>
+            <div class="content">
+            <ol>
+            <br>
+              <li style="cursor: grab;" onclick="myFunction3()">XML Activities & Mapper</li>
+              <hr>
+              <br>
+              <li style="cursor: grab;" onclick="myFunction4()">Parse Activities</li>
+              <hr>
+              <br>
+            </ol> 
+            </div>
+            <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-3</button>
+            <div class="content">
+            <ol>
+            <br>
+              <li style="cursor: grab;" onclick="myFunction5()">General Activities</li>
+              <hr>
+              <br>
+            </ol> 
+            </div>
+            <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-4</button>
+            <div class="content">
+            <ol>
+            <br>
+              <li style="cursor: grab;" onclick="myFunction6()">Groups and XSLT Statements (forEach, forEach groups.. Etc)</li>
+              <hr>
+              <br>
+            </ol> 
+            </div>
+            <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-5</button>
+            <div class="content">
+            <ol>
+            <br>
+              <li style="cursor: grab;" onclick="myFunction7()">JMS Activities</li>
+              <hr>
+              <br>
+            </ol> 
+            </div>
+            <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-6</button>
+            <div class="content">
+            <ol>
+            <br>
+              <li style="cursor: grab;" onclick="myFunction8()">JDBC Activities</li>
+              <hr>
+              <br>
+            </ol> 
+            </div>
+            <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-7</button>
+            <div class="content">
+            <ol>
+            <br>
+              <li style="cursor: grab;" onclick="myFunction9()">File and FTP Activities</li>
+              <hr>
+              <br>
+            </ol> 
+            </div>
+            <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-8</button>
+            <div class="content">
+            <ol>
+            <br>
+              <li style="cursor: grab;" onclick="myFunction10()">HTTP Activities</li>
+              <hr>
+              <br>
+            </ol> 
+            </div>
+            <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-9</button>
+            <div class="content">
+            <ol>
+            <br>
+              <li style="cursor: grab;" onclick="myFunction11()">SOAP Activities</li>
+              <hr>
+              <br>
+            </ol> 
+            </div>
+            <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-10</button>
+            <div class="content">
+            <ol>
+            <br>
+              <li style="cursor: grab;" onclick="myFunction12()">Mail Activities</li>
+              <hr>
+              <br>
+            </ol> 
+            </div>
+            <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-11</button>
+            <div class="content">
+            <ol>
+            <br>
+              <li style="cursor: grab;" onclick="myFunction13()">Java Activities</li>
+              <hr>
+              <br>
+            </ol> 
+            </div>
+            <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-12</button>
+            <div class="content">
+            <ol>
+            <br>
+              <li style="cursor: grab;" onclick="myFunction14()">Archive, EAR ,PAR ,SAR,AAR Concepts and Scripted Build, Export, Deploy commands (BuildEAR/AppManage)</li>
+              <hr>
+              <br>
+              <li style="cursor: grab;" onclick="myFunction15()">TIBCO Admin</li>
+              <hr>
+              <br>
+            </ol> 
+            </div>
+            <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-13, 14, 15</button>
+            <div class="content">
+            <ol>
+            <br>
+              <li style="cursor: grab;" onclick="myFunction16()">POC</li>
+              <hr>
+              <br>
+            </ol> 
+            </div>
+            
+            
+
+        </article>
+        </div>
+      
+
+      <section class="xop-container">
+        <div class="xop-left">
+            <article>
+                <h1>The Content</h1>
+                <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-1</button>
+                <div class="content">
+                <ol>
+                <br>
+                  <li style="cursor: grab;" onclick="myFunction1()">Introduction to EAI,SOA,ESB, Integration Pattern</li>
+                  <hr>
+                  <br>
+                  <li style="cursor: grab;" onclick="myFunction2()">Overview of TIBCO Business works 5,Installations, Schemas (XSD,DTD)</li>
+                  <hr>
+                  <br>
+                </ol> 
+                </div>
+                <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-2</button>
+                <div class="content">
+                <ol>
+                <br>
+                  <li style="cursor: grab;" onclick="myFunction3()">XML Activities & Mapper</li>
+                  <hr>
+                  <br>
+                  <li style="cursor: grab;" onclick="myFunction4()">Parse Activities</li>
+                  <hr>
+                  <br>
+                </ol> 
+                </div>
+                <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-3</button>
+                <div class="content">
+                <ol>
+                <br>
+                  <li style="cursor: grab;" onclick="myFunction5()">General Activities</li>
+                  <hr>
+                  <br>
+                </ol> 
+                </div>
+                <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-4</button>
+                <div class="content">
+                <ol>
+                <br>
+                  <li style="cursor: grab;" onclick="myFunction6()">Groups and XSLT Statements (forEach, forEach groups.. Etc)</li>
+                  <hr>
+                  <br>
+                </ol> 
+                </div>
+                <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-5</button>
+                <div class="content">
+                <ol>
+                <br>
+                  <li style="cursor: grab;" onclick="myFunction7()">JMS Activities</li>
+                  <hr>
+                  <br>
+                </ol> 
+                </div>
+                <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-6</button>
+                <div class="content">
+                <ol>
+                <br>
+                  <li style="cursor: grab;" onclick="myFunction8()">JDBC Activities</li>
+                  <hr>
+                  <br>
+                </ol> 
+                </div>
+                <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-7</button>
+                <div class="content">
+                <ol>
+                <br>
+                  <li style="cursor: grab;" onclick="myFunction9()">File and FTP Activities</li>
+                  <hr>
+                  <br>
+                </ol> 
+                </div>
+                <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-8</button>
+                <div class="content">
+                <ol>
+                <br>
+                  <li style="cursor: grab;" onclick="myFunction10()">HTTP Activities</li>
+                  <hr>
+                  <br>
+                </ol> 
+                </div>
+                <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-9</button>
+                <div class="content">
+                <ol>
+                <br>
+                  <li style="cursor: grab;" onclick="myFunction11()">SOAP Activities</li>
+                  <hr>
+                  <br>
+                </ol> 
+                </div>
+                <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-10</button>
+                <div class="content">
+                <ol>
+                <br>
+                  <li style="cursor: grab;" onclick="myFunction12()">Mail Activities</li>
+                  <hr>
+                  <br>
+                </ol> 
+                </div>
+                <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-11</button>
+                <div class="content">
+                <ol>
+                <br>
+                  <li style="cursor: grab;" onclick="myFunction13()">Java Activities</li>
+                  <hr>
+                  <br>
+                </ol> 
+                </div>
+                <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-12</button>
+                <div class="content">
+                <ol>
+                <br>
+                  <li style="cursor: grab;" onclick="myFunction14()">Archive, EAR ,PAR ,SAR,AAR Concepts and Scripted Build, Export, Deploy commands (BuildEAR/AppManage)</li>
+                  <hr>
+                  <br>
+                  <li style="cursor: grab;" onclick="myFunction15()">TIBCO Admin</li>
+                  <hr>
+                  <br>
+                </ol> 
+                </div>
+                <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-13, 14, 15</button>
+                <div class="content">
+                <ol>
+                <br>
+                  <li style="cursor: grab;" onclick="myFunction16()">POC</li>
+                  <hr>
+                  <br>
+                </ol> 
+                </div>
+
+            </article>
+        </div>
+
+        
+        <div class="xop-mid">
+          <div class="popup" onclick="myFunctionpop()" style="float: right;margin-right: 55px;">About Author!
+  <span class="popuptext" id="myPopup"><div style="background-color: black; color:white;padding: 10px;"><br>
+    Hello! And thanks for investing your valuable time here in the "Spring Framework in easy steps" course.<br><br>
+
+This is Software Developer. I'm a Java Developer and instructor.<br><br>
+
+I have been designing and developing enterprise Java applications for the last 9 years.<br><br>
+</div></span>
+</div>
+            <article>
+                <h1><span style="background-color: lightskyblue; padding: 5px;">Overview :</span></h1>
+                
+                <p id="demo">
+                  <div style="background-color:lightgreen; padding: 10px;">
+                    <br><br>
+                    Guide for TIBCO  Enterprise Message Service,  Administrator, Business Works 5.x  <br><br> Let's get started.
+<br><br> </div>
+<br><br>
+<span style="background-color: orangered; padding: 5px; color: white;"> Course Content </span><br><br>
+<table><th></th><th></th>
+<tr><td>Day 1 : </td></tr>
+<tr >
+  <td style="padding-left: 25px;"> <br >• Introduction to EAI,SOA,ESB, Integration Pattern </td></tr>
+ <tr> <td style="padding-left: 25px;"> <br>• Overview of TIBCO Business works 5,Installations, Schemas (XSD,DTD) <br><br></td> 
+</tr>
+  <tr><td>Day 2 : </td></tr>
+  <tr><td style="padding-left: 25px;">  
+    <br>• XML Activities & Mapper </td></tr>
+    <tr><td style="padding-left: 25px;">  
+    <br>• Parse Activities <br><br> 
+  </td></tr>
+
+  <tr><td>Day 3 : </td></tr>
+  <tr><td style="padding-left: 25px;">  <br>• General Activities <br><br> 
+  </td></tr>
+  
+  <tr><td>Day 4 : </td></tr>
+  <tr><td style="padding-left: 25px;">  <br>• Groups and XSLT Statements (forEach, forEach groups.. Etc)<br><br>  
+  </td></tr>
+  
+  <tr><td>Day 5 : </td></tr>
+  <tr><td style="padding-left: 25px;">  <br>• JMS Activities <br><br> 
+  </td></tr>
+  
+  <tr><td>Day 6 : </td></tr>
+  <tr><td style="padding-left: 25px;">  <br>• JDBC Activities<br><br>  
+  </td></tr>
+  
+  <tr><td>Day 7 : </td></tr>
+  <tr>
+    <td style="padding-left: 25px;"> <br> • File and FTP Activities  <br><br>
+  </td></tr>
+<br><br>
+
+<tr><td>Day 8 : </td></tr>
+<tr><td style="padding-left: 25px;"><br>• HTTP Activities  <br><br>
+</td></tr>
+
+<tr><td>Day 9 : </td></tr>
+<tr><td style="padding-left: 25px;"><br>• SOAP Activities  <br><br>
+</td></tr>
+
+<tr><td>Day 10 : </td></tr>
+<tr><td style="padding-left: 25px;"><br>• Mail Activities <br><br>
+</td></tr>
+
+<tr><td>Day 11 : </td></tr>
+<tr>
+  <td style="padding-left: 25px;">
+    <br>• Java Activities  <br><br>
+</td></tr>
+
+<tr><td>Day 12 : </td></tr>
+<tr>
+  <td style="padding-left: 25px;">  
+    <br>• Archive, EAR ,PAR ,SAR,AAR Concepts and Scripted Build, Export, Deploy commands (BuildEAR/AppManage)   
+  </td>
+</tr>
+<tr>
+  <td style="padding-left: 25px;">
+<br>• TIBCO Admin <br><br> 
+</td>
+</tr>
+<tr><td>Day 13, 14, 15 : </td></tr>
+<tr>
+  <td style="padding-left: 25px;"><br>• POC</td>
+  
+</tr>
+
+
+</table>
+<br><br>
+<h3>References </h3>
+<div style="background-color: bisque;padding: 10px;"><br><br>
+  References  Please refer to these below TIBCO PDFs: <br><br>
+<a href="https://docs.tibco.com/pub/activematrix_businessworks/5.14.0/doc/pdf/TIB_BW_5.14_palette_reference.pdf?id=5">https://docs.tibco.com/pub/activematrix_businessworks/5.14.0/doc/pdf/TIB_BW_5.14_palette_reference.pdf?id=5</a><br><br>
+<a href="https://docs.tibco.com/pub/activematrix_businessworks/5.14.0/doc/pdf/TIB_BW_5.14_process_design_guide.pdf?id=4">https://docs.tibco.com/pub/activematrix_businessworks/5.14.0/doc/pdf/TIB_BW_5.14_process_design_guide.pdf?id=4</a><br><br>
+<a href="https://docs.tibco.com/pub/ems/8.5.1/doc/pdf/TIB_ems_8.5_users_guide.pdf?id=3">https://docs.tibco.com/pub/ems/8.5.1/doc/pdf/TIB_ems_8.5_users_guide.pdf?id=3</a><br><br>
+<a href="https://docs.tibco.com/pub/runtime_agent/5.11.1/doc/pdf/TIB_TRA_5.11.1_domain_utility_usr.pdf?id=3">https://docs.tibco.com/pub/runtime_agent/5.11.1/doc/pdf/TIB_TRA_5.11.1_domain_utility_usr.pdf?id=3</a><br><br>
+<a href="https://docs.tibco.com/pub/runtime_agent/5.11.1/doc/pdf/TIB_TRA_5.11.1_script_deploy_usr.pdf?id=4">https://docs.tibco.com/pub/runtime_agent/5.11.1/doc/pdf/TIB_TRA_5.11.1_script_deploy_usr.pdf?id=4</a><br><br>
+<a href="https://docs.tibco.com/pub/administrator/5.11.1/doc/pdf/TIB_TIBCOAdmin_5.11_usr.pdf?id=2">https://docs.tibco.com/pub/administrator/5.11.1/doc/pdf/TIB_TIBCOAdmin_5.11_usr.pdf?id=2</a>
+<br><br>
+</div><br><br>
+<h3>References </h3>
+Examples or samples of TIBCO BW Designer projects can be found in below location post installations for most of the activities. <br><b> Location - < TIBCO_HOME>/bw/< version>/examples/activities.</b><br> Sample screenshot is as shown below  Navigate inside the folder of each palette and open readme.html file in browser to understand on the examples 
+<img src="./images/1.PNG" alt="">          
+</article>
+        </div>
+
+        <div class="xop-right">
+            <article>
+             <!--   <h1>Overview</h1>
+                <p id="demo">
+                    XML (eXtensible Markup Language) is a markup language used for storing and transporting data. This XML tutorial consists the detailed explanation of all the XML related topics in a systematic manner. Read and practice the tutorials in the given order and you will not face any difficulty in learning XML even if you are a complete beginner. This XML tutorial is designed for both beginners and advanced XML professionals.
+                </p> -->
+                
+            </article>
+        </div>
+    </section>
+</div>
+<script type="text/javascript" src="../menu.js">
+</script>
+<script src="overview.js">
+</script>
+<script type="text/javascript" src="../mobnav.js">
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./audio/audio.js"></script>
+
+<script src="./popup/pop.js"></script>
+
+
+</body>
+
+</html> 

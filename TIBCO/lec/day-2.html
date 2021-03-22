@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../../menu.css">
+<link rel="stylesheet" href="../../split.css">
+<link rel="stylesheet" href="../../mobnav.css">
+<link rel="stylesheet" href="../popup/pop.css">
+
+<link href="./xml_js/intro.html" rel="import" />
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<style>
+
+  .icon1{
+       display: none;
+   }
+  
+   @media screen and (max-width: 600px) {
+   .icon1 {
+     display: block;
+   }
+   .xop-left{
+     display: none;
+ 
+   }
+ }
+ 
+ 
+   </style>
+</head>
+<body>
+ 
+    <div class="topnav" id="myTopnav">
+      <a href="#home" >Home</a>
+      <a href="#" class="active">Tibco</a>
+      <a href="../../weservices/webservices.html">Web Services</a>
+      <a href="../../xml/xml.html">Xml</a>
+      <a href="../../soap/soap.html">Soap Webservice</a>
+      <a href="../../rest/rest.html">Rest Webservice</a>
+      <a href="../spring.html">Spring Framework in Easy Steps</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      
+      <div style="padding-left:16px;">
+        <h2 style="color: chocolate;">Integrated Process Management Practice - TIBCO Capabilities</h2><h4>Overview of TIBCO Business works 5,Installations, Schemas (XSD,DTD)</h4>
+        <div id="main">
+          <button class="openbtn icon1" id="de"   onclick="openNav()"><i class="fa fa-bars"></i> Content</button>  
+          </div>
+
+
+
+
+        <div id="mySidebar" class="sidebar" style="background-color:grey;" >
+          <a href="javascript:void(0)"  class="closebtn" onclick="closeNav()">×</a><br>
+          <article>
+<p> </p> <br>
+           <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-1</button>
+            <div class="content">
+            <ol>
+            <br>
+              <li style="cursor: grab;" onclick="myFunction1()">Introduction to EAI,SOA,ESB, Integration Pattern</li>
+              <hr>
+              <br>
+              <li style="cursor: grab;" onclick="myFunction2()">Overview of TIBCO Business works 5,Installations, Schemas (XSD,DTD)</li>
+              <hr>
+              <br>
+            </ol> 
+            </div>
+            <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-2</button>
+            <div class="content">
+            <ol>
+            <br>
+              <li style="cursor: grab;" onclick="myFunction3()">XML Activities & Mapper</li>
+              <hr>
+              <br>
+              <li style="cursor: grab;" onclick="myFunction4()">Parse Activities</li>
+              <hr>
+              <br>
+            </ol> 
+            </div>
+            <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-3</button>
+            <div class="content">
+            <ol>
+            <br>
+              <li style="cursor: grab;" onclick="myFunction5()">General Activities</li>
+              <hr>
+              <br>
+            </ol> 
+            </div>
+            <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-4</button>
+            <div class="content">
+            <ol>
+            <br>
+              <li style="cursor: grab;" onclick="myFunction6()">Groups and XSLT Statements (forEach, forEach groups.. Etc)</li>
+              <hr>
+              <br>
+            </ol> 
+            </div>
+            <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-5</button>
+            <div class="content">
+            <ol>
+            <br>
+              <li style="cursor: grab;" onclick="myFunction7()">JMS Activities</li>
+              <hr>
+              <br>
+            </ol> 
+            </div>
+            <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-6</button>
+            <div class="content">
+            <ol>
+            <br>
+              <li style="cursor: grab;" onclick="myFunction8()">JDBC Activities</li>
+              <hr>
+              <br>
+            </ol> 
+            </div>
+            <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-7</button>
+            <div class="content">
+            <ol>
+            <br>
+              <li style="cursor: grab;" onclick="myFunction9()">File and FTP Activities</li>
+              <hr>
+              <br>
+            </ol> 
+            </div>
+            <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-8</button>
+            <div class="content">
+            <ol>
+            <br>
+              <li style="cursor: grab;" onclick="myFunction10()">HTTP Activities</li>
+              <hr>
+              <br>
+            </ol> 
+            </div>
+            <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-9</button>
+            <div class="content">
+            <ol>
+            <br>
+              <li style="cursor: grab;" onclick="myFunction11()">SOAP Activities</li>
+              <hr>
+              <br>
+            </ol> 
+            </div>
+            <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-10</button>
+            <div class="content">
+            <ol>
+            <br>
+              <li style="cursor: grab;" onclick="myFunction12()">Mail Activities</li>
+              <hr>
+              <br>
+            </ol> 
+            </div>
+            <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-11</button>
+            <div class="content">
+            <ol>
+            <br>
+              <li style="cursor: grab;" onclick="myFunction13()">Java Activities</li>
+              <hr>
+              <br>
+            </ol> 
+            </div>
+            <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-12</button>
+            <div class="content">
+            <ol>
+            <br>
+              <li style="cursor: grab;" onclick="myFunction14()">Archive, EAR ,PAR ,SAR,AAR Concepts and Scripted Build, Export, Deploy commands (BuildEAR/AppManage)</li>
+              <hr>
+              <br>
+              <li style="cursor: grab;" onclick="myFunction15()">TIBCO Admin</li>
+              <hr>
+              <br>
+            </ol> 
+            </div>
+            <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-13, 14, 15</button>
+            <div class="content">
+            <ol>
+            <br>
+              <li style="cursor: grab;" onclick="myFunction16()">POC</li>
+              <hr>
+              <br>
+            </ol> 
+            </div>
+            
+            
+
+        </article>
+        </div>
+      
+
+      <section class="xop-container">
+        <div class="xop-left">
+            <article>
+                <h1>The Content</h1>
+                <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-1</button>
+                <div class="content">
+                <ol>
+                <br>
+                  <li style="cursor: grab;" onclick="myFunction1()">Introduction to EAI,SOA,ESB, Integration Pattern</li>
+                  <hr>
+                  <br>
+                  <li style="cursor: grab;" onclick="myFunction2()">Overview of TIBCO Business works 5,Installations, Schemas (XSD,DTD)</li>
+                  <hr>
+                  <br>
+                </ol> 
+                </div>
+                <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-2</button>
+                <div class="content">
+                <ol>
+                <br>
+                  <li style="cursor: grab;" onclick="myFunction3()">XML Activities & Mapper</li>
+                  <hr>
+                  <br>
+                  <li style="cursor: grab;" onclick="myFunction4()">Parse Activities</li>
+                  <hr>
+                  <br>
+                </ol> 
+                </div>
+                <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-3</button>
+                <div class="content">
+                <ol>
+                <br>
+                  <li style="cursor: grab;" onclick="myFunction5()">General Activities</li>
+                  <hr>
+                  <br>
+                </ol> 
+                </div>
+                <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-4</button>
+                <div class="content">
+                <ol>
+                <br>
+                  <li style="cursor: grab;" onclick="myFunction6()">Groups and XSLT Statements (forEach, forEach groups.. Etc)</li>
+                  <hr>
+                  <br>
+                </ol> 
+                </div>
+                <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-5</button>
+                <div class="content">
+                <ol>
+                <br>
+                  <li style="cursor: grab;" onclick="myFunction7()">JMS Activities</li>
+                  <hr>
+                  <br>
+                </ol> 
+                </div>
+                <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-6</button>
+                <div class="content">
+                <ol>
+                <br>
+                  <li style="cursor: grab;" onclick="myFunction8()">JDBC Activities</li>
+                  <hr>
+                  <br>
+                </ol> 
+                </div>
+                <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-7</button>
+                <div class="content">
+                <ol>
+                <br>
+                  <li style="cursor: grab;" onclick="myFunction9()">File and FTP Activities</li>
+                  <hr>
+                  <br>
+                </ol> 
+                </div>
+                <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-8</button>
+                <div class="content">
+                <ol>
+                <br>
+                  <li style="cursor: grab;" onclick="myFunction10()">HTTP Activities</li>
+                  <hr>
+                  <br>
+                </ol> 
+                </div>
+                <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-9</button>
+                <div class="content">
+                <ol>
+                <br>
+                  <li style="cursor: grab;" onclick="myFunction11()">SOAP Activities</li>
+                  <hr>
+                  <br>
+                </ol> 
+                </div>
+                <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-10</button>
+                <div class="content">
+                <ol>
+                <br>
+                  <li style="cursor: grab;" onclick="myFunction12()">Mail Activities</li>
+                  <hr>
+                  <br>
+                </ol> 
+                </div>
+                <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-11</button>
+                <div class="content">
+                <ol>
+                <br>
+                  <li style="cursor: grab;" onclick="myFunction13()">Java Activities</li>
+                  <hr>
+                  <br>
+                </ol> 
+                </div>
+                <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-12</button>
+                <div class="content">
+                <ol>
+                <br>
+                  <li style="cursor: grab;" onclick="myFunction14()">Archive, EAR ,PAR ,SAR,AAR Concepts and Scripted Build, Export, Deploy commands (BuildEAR/AppManage)</li>
+                  <hr>
+                  <br>
+                  <li style="cursor: grab;" onclick="myFunction15()">TIBCO Admin</li>
+                  <hr>
+                  <br>
+                </ol> 
+                </div>
+                <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-13, 14, 15</button>
+                <div class="content">
+                <ol>
+                <br>
+                  <li style="cursor: grab;" onclick="myFunction16()">POC</li>
+                  <hr>
+                  <br>
+                </ol> 
+                </div>
+
+            </article>
+        </div>
+
+        
+        <div class="xop-mid">
+          <div class="popup" onclick="myFunctionpop()" style="float: right;margin-right: 55px;">About Author!
+  <span class="popuptext" id="myPopup"><div style="background-color: black; color:white;padding: 10px;"><br>
+    Hello! And thanks for investing your valuable time here in the "Spring Framework in easy steps" course.<br><br>
+
+This is Software Developer. I'm a Java Developer and instructor.<br><br>
+
+I have been designing and developing enterprise Java applications for the last 9 years.<br><br>
+</div></span>
+</div>
+            <article><br>
+                <h1><div style="background-color: lightskyblue; padding: 5px;">Overview of TIBCO Business works 5,Installations, Schemas (XSD,DTD) :</div></h1>
+                
+                <p id="demo">
+                  <div style="background-color:pink; padding: 10px;">
+                    <br><br>
+                    DAY-1 (Part-2)  <br><br> Let's get started.
+<br><br> </div>
+<br><br><span style="background-color: orangered; padding: 5px; color: white;">TIBCO</span><br><br>
+ The Information Bus Company (TIBCO) is a software company that provides business integration software to integrate, manage and monitor  enterprise applications and information delivery.<br><br> It contains a suite of products like TIBCO Enterprise Messaging Service (EMS), TIBCO  Business Works(BW), TIBCO Administrator etc.<br><br>  1. TIBCO EMS is an extension of Java Message service and is used for communication with other applications.<br><br>  2. TIBCO BW is a package provided with in TIBCO suite of products where the integration logic is designed and developed.<br><br>  3. TIBCO Administrator is used to deploy the application.  
+<br><br><span style="background-color: orangered; padding: 5px; color: white;"> Business Works 5.x</span><br><br>
+ 1. It allows the automation of business processes  .<br><br> 2. It mediates interactions between different applications and databases  .<br><br>3. Manage transactions and Web Services, Handle exceptions and report errors  .<br><br>4. Provides graphical user interface to configure application services  .<br><br>5. Provides plug-ins for application connectivity  .<br><br>6. Provides interface for administrator to monitor and manage processes and application Resources          
+ <br><br><span style="background-color: orangered; padding: 5px; color: white;"> TIBCO</span><br><br>
+ Installation of TIBCO suite of products (TRA, RV, EMS, BW, Admin) : <br><br> Below is the sequence of Installation of TIBCO suite of Products –  <br><br>• TIBCO Rendezvous (RV) (v 8.5.0)  <br><br>• TIBCO Runtime Agent (TRA) (v 5.11.0)  <br><br>• TIBCO Enterprise Message Service (EMS) (v 8.5.1) <br><br>• TIBCO ActiveMatrix BusinessWorks (BW) (5.14.0)  <br><br>• TIBCO Administrator - Enterprise Edition (Admin) (v 5.11.1) <br><br>• TIBCO Hawk (v 6.2.0) <br><br> Other products like adaptors (ADB, File, SAP R3) and Plugins (REST JSON, MQ, Salesforce) can also be installed based on project specific  Requirements.<br><br><br><span style="color: blue;"> Modes of Installation :</span>  <br><br>• GUI Mode – Pictorial way of Installation. <br><br>• Console Mode – Interactive way of Installation.<br><br> • Silent Mode – Executed from Command Line, can be used for Scripted Installation.<br><br>
+  <span style="color: blue;">Installation Prerequisites :</span> <br><br>  Always make sure to check the Product dependencies and compatibilities before installing the products. <br><br> Few thing to look for are – Platform  or OS Type and version supported, Java version, Third Party Software support, Disk Space and Memory required and other TIBCO  Product/Library dependencies. 
+<br><br>
+<br><br><div style="background-color: blanchedalmond; padding: 5px; color: black"> 
+
+  Note –<br><br> To access databases from driver classes that are not provided by TIBCO Database Driver Supplements or to use the product specific  drivers, the required driver library files has to be placed in the TPCL folder or the location of the drivers file has to be updated in the  designer.tra (for testing locally during the development phase) and in bwengine.tra file (in deployment environment like DEV, UAT, PROD).
+</div><br><br>
+  <br><br><span style="background-color: orangered; padding: 5px; color: white;"> Schemas</span><br><br>
+  A schema is a model for describing the structure of information.<br><br> It's a term borrowed from the database world to describe the structure of data  in relational tables.<br><br> In the context of XML, a schema describes a model for a whole class of documents. <br><br> An XML schema defines the elements that an XML file may contain. <br><br>It provides a specific structure for XML data, which is important when  sharing XML files between multiple systems.<br><br> Defining an XML schema ensures an XML Document will not contain unknown values, which  may cause parsing errors. <br><br>The purpose of a schema is to allow machine validation of document structure.<br><br> Every specific, individual document  which doesn't violate any of the constraints of the model is, by definition, valid according to that schema.
+  <br><br>
+</article>
+        </div>
+
+        <div class="xop-right">
+            <article>
+             <!--   <h1>Overview</h1>
+                <p id="demo">
+                    XML (eXtensible Markup Language) is a markup language used for storing and transporting data. This XML tutorial consists the detailed explanation of all the XML related topics in a systematic manner. Read and practice the tutorials in the given order and you will not face any difficulty in learning XML even if you are a complete beginner. This XML tutorial is designed for both beginners and advanced XML professionals.
+                </p> -->
+                
+            </article>
+        </div>
+    </section>
+</div>
+
+
+<script src="./audio/audio.js"></script>
+
+<script type="text/javascript" src="../../menu.js">
+</script>
+<script src="overview.js">
+</script>
+<script type="text/javascript" src="../../mobnav.js">
+</script>
+
+
+
+<script src="../popup/pop.js"></script>
+
+
+
+
+</body>
+
+</html> 
