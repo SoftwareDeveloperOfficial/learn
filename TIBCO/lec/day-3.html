@@ -36,7 +36,7 @@
 <body>
  
     <div class="topnav" id="myTopnav">
-      <a href="#home" >Home</a>
+      <a href="../../index.html" >Home</a>
       <a href="#" class="active">Tibco</a>
       <a href="../../weservices/webservices.html">Web Services</a>
       <a href="../../xml/xml.html">Xml</a>
@@ -49,7 +49,7 @@
       </div>
       
       <div style="padding-left:16px;">
-        <h2 style="color: chocolate;">Integrated Process Management Practice - TIBCO Capabilities</h2><h4>Overview of TIBCO Business works 5,Installations, Schemas (XSD,DTD)</h4>
+        <h2 style="color: chocolate;">Integrated Process Management Practice - TIBCO Capabilities</h2><h4>XML Activities & Mapper</h4>
         <div id="main">
           <button class="openbtn icon1" id="de"   onclick="openNav()"><i class="fa fa-bars"></i> Content</button>  
           </div>
@@ -211,10 +211,10 @@
                 </ol> 
                 </div>
                 <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-2</button>
-                <div class="content">
+                <div class="content-">
                 <ol>
                 <br>
-                  <li style="cursor: grab;" onclick="myFunction3()">XML Activities & Mapper</li>
+                  <li style="cursor: grab;"   onclick="myFunction3()"><span style="color: red">XML Activities & Mapper</span></li>
                   <hr>
                   <br>
                   <li style="cursor: grab;" onclick="myFunction4()">Parse Activities</li>
@@ -340,27 +340,26 @@ I have been designing and developing enterprise Java applications for the last 9
 </div></span>
 </div>
             <article><br>
-                <h1><div style="background-color: lightskyblue; padding: 5px;">Overview of TIBCO Business works 5,Installations, Schemas (XSD,DTD) :</div></h1>
+                <h1><div style="background-color: lightskyblue; padding: 5px;">XML Activities & Mapper :</div></h1>
                 
                 <p id="demo">
                   <div style="background-color:pink; padding: 10px;">
-                    <br><br>
-                    DAY-2 (Part-2)  <br><br> Let's get started.
-<br><br> </div>
-<br><br><span style="background-color: orangered; padding: 5px; color: white;">TIBCO</span><br><br>
- The Information Bus Company (TIBCO) is a software company that provides business integration software to integrate, manage and monitor  enterprise applications and information delivery. It contains a suite of products like TIBCO Enterprise Messaging Service (EMS), TIBCO  Business Works(BW), TIBCO Administrator etc.  1. TIBCO EMS is an extension of Java Message service and is used for communication with other applications.  2. TIBCO BW is a package provided with in TIBCO suite of products where the integration logic is designed and developed.  3. TIBCO Administrator is used to deploy the application.  
-<br><br><span style="background-color: orangered; padding: 5px; color: white;"> Business Works 5.x</span><br><br>
- It allows the automation of business processes  . It mediates interactions between different applications and databases  . Manage transactions and Web Services, Handle exceptions and report errors  . Provides graphical user interface to configure application services  . Provides plug-ins for application connectivity  . Provides interface for administrator to monitor and manage processes and application Resources          
- <br><br><span style="background-color: orangered; padding: 5px; color: white;"> TIBCO</span><br><br>
- Installation of TIBCO suite of products (TRA, RV, EMS, BW, Admin) :  Below is the sequence of Installation of TIBCO suite of Products –  TIBCO Rendezvous (RV) (v 8.5.0)  TIBCO Runtime Agent (TRA) (v 5.11.0)  TIBCO Enterprise Message Service (EMS) (v 8.5.1)  TIBCO ActiveMatrix BusinessWorks (BW) (5.14.0)  TIBCO Administrator - Enterprise Edition (Admin) (v 5.11.1)  TIBCO Hawk (v 6.2.0)  Other products like adaptors (ADB, File, SAP R3) and Plugins (REST JSON, MQ, Salesforce) can also be installed based on project specific  Requirements.  Modes of Installation :  •••GUI Mode – Pictorial way of Installation.  Console Mode – Interactive way of Installation.  Silent Mode – Executed from Command Line, can be used for Scripted Installation.  Installation Prerequisites :  Always make sure to check the Product dependencies and compatibilities before installing the products. Few thing to look for are – Platform  or OS Type and version supported, Java version, Third Party Software support, Disk Space and Memory required and other TIBCO  Product/Library dependencies. 
-<br><br>
-<br><br><div style="background-color: black; padding: 5px; color: wheat"> 
-
-  Note – To access databases from driver classes that are not provided by TIBCO Database Driver Supplements or to use the product specific  drivers, the required driver library files has to be placed in the TPCL folder or the location of the drivers file has to be updated in the  designer.tra (for testing locally during the development phase) and in bwengine.tra file (in deployment environment like DEV, UAT, PROD).
-</div><br><br>
-  <br><br><span style="background-color: orangered; padding: 5px; color: white;"> Schemas</span><br><br>
-  A schema is a model for describing the structure of information. It's a term borrowed from the database world to describe the structure of data  in relational tables. In the context of XML, a schema describes a model for a whole class of documents.  An XML schema defines the elements that an XML file may contain. It provides a specific structure for XML data, which is important when  sharing XML files between multiple systems. Defining an XML schema ensures an XML Document will not contain unknown values, which  may cause parsing errors. The purpose of a schema is to allow machine validation of document structure. Every specific, individual document  which doesn't violate any of the constraints of the model is, by definition, valid according to that schema.
-  <br><br>
+                    
+                    DAY-2 (Part-1) .............. Let's get started.
+ </div>
+<br><br><span style="background-color: orangered; padding: 5px; color: white;">BW-XMLPalette</span><br><br>
+The XML Activities palette provides activities for parsing XML strings into schemas and rendering schemas into XML strings.
+<br><br><div style="background-color: blue; padding: 5px; color: white;">Parse XML:</div> <br>• Processes a binary XML file or XML string and turns it into an XML schema based on the XSD specified . 
+<br><img src="../images/4.PNG" alt=""><br><br><div style="background-color: blue; padding: 5px; color: white;">Render XML:</div><br>• Takes an instance of an XML schema element and renders it as a stream of bytes containing XML or an XML string . 
+<br><img src="../images/5.PNG" alt=""><br><br><div style="background-color: blue; padding: 5px; color: white;">Transform XML:</div><br>• Allows us to transform an input XML document into the output specified by the given XSLT File shared configuration  resource.
+<br><img src="../images/6.PNG" alt=""><br><br><div style="background-color: blue; padding: 5px; color: white;">XSLT File:</div>  <br><br>• Allows us to load an XSLT file to use to transform XML schemas using the Transform XML activity.
+<br>• A transformation expressed in  XSLT is called a stylesheet. A stylesheet contains a set of template rules.
+<br>• Each template rule has two parts: a pattern that is matched against  nodes in the source document and a template that can be instantiated to form part of the result document. 
+<br><img src="../images/7.PNG" alt="">
+<div>
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/JeKCHYnpkic?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/QzFojs1kixw?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 </article>
         </div>
 

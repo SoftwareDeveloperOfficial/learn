@@ -36,7 +36,7 @@
 <body>
  
     <div class="topnav" id="myTopnav">
-      <a href="#home" >Home</a>
+      <a href="../../index.html" >Home</a>
       <a href="#" class="active">Tibco</a>
       <a href="../../weservices/webservices.html">Web Services</a>
       <a href="../../xml/xml.html">Xml</a>
@@ -49,7 +49,7 @@
       </div>
       
       <div style="padding-left:16px;">
-        <h2 style="color: chocolate;">Integrated Process Management Practice - TIBCO Capabilities</h2><h4>Overview of TIBCO Business works 5,Installations, Schemas (XSD,DTD)</h4>
+        <h2 style="color: chocolate;">Integrated Process Management Practice - TIBCO Capabilities</h2><h4>Parse Activities</h4>
         <div id="main">
           <button class="openbtn icon1" id="de"   onclick="openNav()"><i class="fa fa-bars"></i> Content</button>  
           </div>
@@ -211,13 +211,13 @@
                 </ol> 
                 </div>
                 <button class="collapsible border border-top-0 " style="border-bottom: 1px solid whitesmoke;">DAY-2</button>
-                <div class="content">
+                <div class="content-">
                 <ol>
                 <br>
                   <li style="cursor: grab;" onclick="myFunction3()">XML Activities & Mapper</li>
                   <hr>
                   <br>
-                  <li style="cursor: grab;" onclick="myFunction4()">Parse Activities</li>
+                  <li style="cursor: grab;" onclick="myFunction4()"><span style="color: red">Parse Activities</span></li>
                   <hr>
                   <br>
                 </ol> 
@@ -340,27 +340,26 @@ I have been designing and developing enterprise Java applications for the last 9
 </div></span>
 </div>
             <article><br>
-                <h1><div style="background-color: lightskyblue; padding: 5px;">Overview of TIBCO Business works 5,Installations, Schemas (XSD,DTD) :</div></h1>
+                <h1><div style="background-color: lightskyblue; padding: 5px;">Parse Activities :</div></h1>
                 
                 <p id="demo">
                   <div style="background-color:pink; padding: 10px;">
                     <br><br>
                     DAY-2 (Part-2)  <br><br> Let's get started.
 <br><br> </div>
-<br><br><span style="background-color: orangered; padding: 5px; color: white;">TIBCO</span><br><br>
- The Information Bus Company (TIBCO) is a software company that provides business integration software to integrate, manage and monitor  enterprise applications and information delivery. It contains a suite of products like TIBCO Enterprise Messaging Service (EMS), TIBCO  Business Works(BW), TIBCO Administrator etc.  1. TIBCO EMS is an extension of Java Message service and is used for communication with other applications.  2. TIBCO BW is a package provided with in TIBCO suite of products where the integration logic is designed and developed.  3. TIBCO Administrator is used to deploy the application.  
-<br><br><span style="background-color: orangered; padding: 5px; color: white;"> Business Works 5.x</span><br><br>
- It allows the automation of business processes  . It mediates interactions between different applications and databases  . Manage transactions and Web Services, Handle exceptions and report errors  . Provides graphical user interface to configure application services  . Provides plug-ins for application connectivity  . Provides interface for administrator to monitor and manage processes and application Resources          
- <br><br><span style="background-color: orangered; padding: 5px; color: white;"> TIBCO</span><br><br>
- Installation of TIBCO suite of products (TRA, RV, EMS, BW, Admin) :  Below is the sequence of Installation of TIBCO suite of Products –  TIBCO Rendezvous (RV) (v 8.5.0)  TIBCO Runtime Agent (TRA) (v 5.11.0)  TIBCO Enterprise Message Service (EMS) (v 8.5.1)  TIBCO ActiveMatrix BusinessWorks (BW) (5.14.0)  TIBCO Administrator - Enterprise Edition (Admin) (v 5.11.1)  TIBCO Hawk (v 6.2.0)  Other products like adaptors (ADB, File, SAP R3) and Plugins (REST JSON, MQ, Salesforce) can also be installed based on project specific  Requirements.  Modes of Installation :  •••GUI Mode – Pictorial way of Installation.  Console Mode – Interactive way of Installation.  Silent Mode – Executed from Command Line, can be used for Scripted Installation.  Installation Prerequisites :  Always make sure to check the Product dependencies and compatibilities before installing the products. Few thing to look for are – Platform  or OS Type and version supported, Java version, Third Party Software support, Disk Space and Memory required and other TIBCO  Product/Library dependencies. 
-<br><br>
-<br><br><div style="background-color: black; padding: 5px; color: wheat"> 
-
-  Note – To access databases from driver classes that are not provided by TIBCO Database Driver Supplements or to use the product specific  drivers, the required driver library files has to be placed in the TPCL folder or the location of the drivers file has to be updated in the  designer.tra (for testing locally during the development phase) and in bwengine.tra file (in deployment environment like DEV, UAT, PROD).
-</div><br><br>
-  <br><br><span style="background-color: orangered; padding: 5px; color: white;"> Schemas</span><br><br>
-  A schema is a model for describing the structure of information. It's a term borrowed from the database world to describe the structure of data  in relational tables. In the context of XML, a schema describes a model for a whole class of documents.  An XML schema defines the elements that an XML file may contain. It provides a specific structure for XML data, which is important when  sharing XML files between multiple systems. Defining an XML schema ensures an XML Document will not contain unknown values, which  may cause parsing errors. The purpose of a schema is to allow machine validation of document structure. Every specific, individual document  which doesn't violate any of the constraints of the model is, by definition, valid according to that schema.
-  <br><br>
+<br><br><span style="background-color: orangered; padding: 5px; color: white;">BW-P</span><img src="../images/8.PNG" alt=""><span style="background-color: orangered; padding: 5px; color: white;">ePalette</span><br><br>
+  The Parse palette provides shared configuration resources and activities for parsing and rendering formatted text.
+  <br><br> This is useful if you want to  transform formatted lines of text into a data schema.
+  <br><br> This is also useful if you want to transform a data schema into a formatted text string.
+  <br><br>  The text lines can be formatted either by delimiters separating each field or offsets can be specified to determine where each field begins and  ends.
+  <br><br> <div style="background-color: blue; padding: 5px; color: white;">Data Format:</div><br> • It contains the specification for parsing or rendering a text string using the Parse Data and Render Data activities.
+  <br><br>• This shared  configuration resource specifies the type of formatting for the text (delimited columns or fixed-width columns), the column separator for  delimited columns, the line separator, and the fill character and field offsets for fixed-width columns.
+<br><img src="../images/9.PNG" alt="">  <br><br> <div style="background-color: blue; padding: 5px; color: white;">Parse Data:</div><br>• It takes a text string or input from a file and processes it, turning it into a schema tree based on the specified Data Format shared  configuration 
+<br><img src="../images/10.PNG" alt="">  <br><br><div style="background-color: blue; padding: 5px; color: white;">Render Data:</div><br>• It takes an instance of a data schema and renders it as a text string.
+  <br><br>• The schema processed is based on a specified Data  Format shared configuration. <br><br>
+<div>
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LzYihYdsPew?rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 </article>
         </div>
 
